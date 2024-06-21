@@ -1,0 +1,102 @@
+/* Card.css */
+
+/* General Styles */
+.card {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    border-color: #0DCAF0;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: transform 0.6s, box-shadow 0.6s ;    
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(38, 4, 176, 0.9);
+}
+
+/* .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: color 0.3s;
+}
+
+/* Card Title Hover Effect */
+.card-title:hover {
+    color: #0DCAF0;
+}
+
+.btn-outline-info {
+    border-color: #0DCAF0;
+    color: #0DCAF0;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Button Hover Effect */
+.btn-outline-info:hover {
+    background-color: #0DCAF0;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Button Active Effect */
+.btn-outline-info:active {
+    transform: scale(0.95);
+}
+
+.m-2 {
+    margin: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        max-width: 20rem;
+        padding: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .btn-outline-info {
+        font-size: 0.875rem;
+        padding: 0.375rem 0.75rem;
+    }
+
+    .m-2 {
+        margin: 0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 15rem;
+        padding: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .btn-outline-info {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .m-2 {
+        margin: 0.25rem;
+    }
+}
